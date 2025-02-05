@@ -1,0 +1,6 @@
+.env
+*secrets.yml
+*secrets.yaml
+.DS_Store
+*.bak
+config/streaming.cnf
