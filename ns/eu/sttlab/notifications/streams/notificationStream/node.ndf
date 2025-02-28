@@ -38,7 +38,7 @@
     <value name="pollingIntervalUnit">MILLISECONDS</value>
     <number name="pollingRequestSize" type="Integer">100</number>
     <value name="aliasName">sttNotificationManagement_es</value>
-    <Boolean name="enabled">true</Boolean>
+    <Boolean name="enabled">false</Boolean>
     <value name="transientFailureAction">NONE</value>
     <value name="failureAction">NONE</value>
     <null name="resourceMonitorSvc"/>
@@ -65,13 +65,13 @@
     <record name="target" javaclass="com.wm.util.Values">
       <value name="type">INVOKE_SERVICE</value>
       <record name="parameters" javaclass="com.wm.util.Values">
+        <value name="serviceName">eu.sttlab.notifications.streams.notificationStream_:stream_target</value>
         <array name="nameValue" type="record" depth="1">
           <record javaclass="com.wm.util.Values">
             <value name="name">serviceName</value>
             <value name="value">eu.sttlab.notifications.streams.notificationStream_:stream_target</value>
           </record>
         </array>
-        <value name="serviceName">eu.sttlab.notifications.streams.notificationStream_:stream_target</value>
       </record>
     </record>
   </record>
